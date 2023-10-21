@@ -26,6 +26,24 @@ const music_list = [
         name : 'rip',
         artist : 'carti',
         music : 'rip.mp3'
+    },
+     {
+        img : 'rip.jpg',
+        name : 'rip',
+        artist : 'carti',
+        music : 'rip.mp3'
+    },
+ {
+        img : 'rip.jpg',
+        name : 'rip',
+        artist : 'carti',
+        music : 'rip.mp3'
+    },
+ {
+        img : 'rip.jpg',
+        name : 'rip',
+        artist : 'carti',
+        music : 'rip.mp3'
     }
    
 ];
