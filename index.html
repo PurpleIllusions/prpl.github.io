@@ -1,65 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Music Player</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
+    <title>Music Database Web App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Music Player</h1>
-    
-    <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Search for music">
-        <button id="search-button">Search</button>
-    </div>
-
-    <div class="music-list">
+    <header>
+        <h1>Music Database</h1>
+        <input type="text" id="searchInput" placeholder="Search for music">
+        <button id="searchButton">Search</button>
+    </header>
+    <div id="musicList">
         <ul id="results">
-            <!-- Music search results will be displayed here -->
+            <!-- Search results will be displayed here -->
         </ul>
     </div>
-
-    <audio id="music-player" controls>
-        <!-- Music will be played here -->
+    <audio id="musicPlayer" controls>
+        <!-- Music player for playing selected tracks -->
     </audio>
 
-    <script>
-        // Simulated music data
-        const musicData = [
-            { title: 'Song 1', artist: 'Artist 1', source: 'song1.mp3' },
-            { title: 'Song 2', artist: 'Artist 2', source: 'song2.mp3' },
-            // Add more music data here
-        ];
-
-        const searchInput = document.getElementById('search-input');
-        const searchButton = document.getElementById('search-button');
-        const musicPlayer = document.getElementById('music-player');
-        const results = document.getElementById('results');
-
-        // Function to display search results
-        function displayResults(query) {
-            results.innerHTML = '';
-            const filteredMusic = musicData.filter(item =>
-                item.title.toLowerCase().includes(query.toLowerCase()) || item.artist.toLowerCase().includes(query.toLowerCase())
-            );
-
-            filteredMusic.forEach(item => {
-                const li = document.createElement('li');
-                li.innerHTML = `${item.title} by ${item.artist}`;
-                li.addEventListener('click', () => {
-                    musicPlayer.src = item.source;
-                    musicPlayer.play();
-                });
-                results.appendChild(li);
-            });
-        }
-
-        // Event listener for the search button
-        searchButton.addEventListener('click', () => {
-            const query = searchInput.value;
-            displayResults(query);
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
