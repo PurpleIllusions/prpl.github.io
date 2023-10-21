@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Sample music data (you should fetch this from a database)
     const musicDatabase = [
-        { title: 'Song 1', url: 'song1.mp3' },
+        { title: 'Song 1', rip.mp3 'song1.mp3' },
         { title: 'Song 2', url: 'song2.mp3' },
         { title: 'Song 3', url: 'song3.mp3' }
     ];
