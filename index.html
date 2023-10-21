@@ -2,28 +2,63 @@
 <html>
 <head>
     <title>Music Player</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
 </head>
 <body>
     <h1>Music Player</h1>
-    <audio id="musicPlayer" controls>
-        <source src="file:///C:/Users/User/OneDrive/Pulpit/OG/rip.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+    
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for music">
+        <button id="search-button">Search</button>
+    </div>
+
+    <div class="music-list">
+        <ul id="results">
+            <!-- Music search results will be displayed here -->
+        </ul>
+    </div>
+
+    <audio id="music-player" controls>
+        <!-- Music will be played here -->
     </audio>
 
-    <button id="playButton">Play</button>
-    <button id="pauseButton">Pause</button>
-
     <script>
-        const musicPlayer = document.getElementById('musicPlayer');
-        const playButton = document.getElementById('playButton');
-        const pauseButton = document.getElementById('pauseButton');
+        // Simulated music data
+        const musicData = [
+            { title: 'Song 1', artist: 'Artist 1', source: 'song1.mp3' },
+            { title: 'Song 2', artist: 'Artist 2', source: 'song2.mp3' },
+            // Add more music data here
+        ];
 
-        playButton.addEventListener('click', () => {
-            musicPlayer.play();
-        });
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const musicPlayer = document.getElementById('music-player');
+        const results = document.getElementById('results');
 
-        pauseButton.addEventListener('click', () => {
-            musicPlayer.pause();
+        // Function to display search results
+        function displayResults(query) {
+            results.innerHTML = '';
+            const filteredMusic = musicData.filter(item =>
+                item.title.toLowerCase().includes(query.toLowerCase()) || item.artist.toLowerCase().includes(query.toLowerCase())
+            );
+
+            filteredMusic.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `${item.title} by ${item.artist}`;
+                li.addEventListener('click', () => {
+                    musicPlayer.src = item.source;
+                    musicPlayer.play();
+                });
+                results.appendChild(li);
+            });
+        }
+
+        // Event listener for the search button
+        searchButton.addEventListener('click', () => {
+            const query = searchInput.value;
+            displayResults(query);
         });
     </script>
 </body>
