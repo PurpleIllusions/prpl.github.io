@@ -25,7 +25,7 @@ const music_list = [
         img : 'images/stay.png',
         name : 'Stay',
         artist : 'The Kid LAROI, Justin Bieber',
-        music : 'music/stay.mp3'
+        music : 'rip.mp3'
     },
     {
         img : 'images/fallingdown.jpg',
