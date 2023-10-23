@@ -142,9 +142,7 @@ body {
     .randomActive{
         color: black;
     }
-    .rotate {
-        animation: rotation 8s infinite linear;
-    }
+    
 
     .loader {
       height: 70px;
@@ -343,7 +341,7 @@ body {
         width: 10px;
         border-radius: 50px;
         margin: 0 5px;
-        animation: animate 1.4s linear infinite;
+        
     }
       .stroke:nth-child(1){
           animation-delay: 0s;
