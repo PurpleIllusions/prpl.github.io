@@ -9,20 +9,12 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
-.player {
-    width: 500px; /
-    height: 600px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
+
 .wrapper {
     border: 1px solid transparent;
     padding: 30px;
     border-radius: 20px;
-    background-color: #c6cece;
+    background-color: #B3B0D0;
     box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0, 0, 0, 0.22);
     display: flex;
     flex-direction: column;
@@ -82,7 +74,7 @@ body {
 .volume_slider {
     appearance: none;
     height: 5px;
-    background: #758fec;
+    background: #4e6890;
     transition: opacity 0.2s;
     width: 60%;
 }
@@ -93,7 +85,7 @@ body {
     width: 15px;
     height: 15px;
     background: white;
-    border: 3px solid #758fec;
+    border: 3px solid #4e6890;
     cursor: grab;
     border-radius: 100%;
 }
@@ -132,16 +124,6 @@ i.fa-volume-up {
     animation: animate 1.4s linear infinite;
 }
 
-@keyframes animate {
-    50% {
-        height: 20%;
-        background: #4286f4;
-    }
-    100% {
-        background: #4286f4;
-        height: 100%;
-    }
-}
 
 .stroke:nth-child(1) {
     animation-delay: 0s;
