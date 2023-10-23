@@ -74,7 +74,7 @@ body {
 .volume_slider {
     appearance: none;
     height: 5px;
-    background: #4e6890;
+    background: #1b222c;
     transition: opacity 0.2s;
     width: 60%;
 }
@@ -85,7 +85,7 @@ body {
     width: 15px;
     height: 15px;
     background: white;
-    border: 3px solid #4e6890;
+    border: 3px solid #1b222c;
     cursor: grab;
     border-radius: 100%;
 }
