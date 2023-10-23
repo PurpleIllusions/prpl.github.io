@@ -94,6 +94,27 @@ function pauseTrack(){
     wave.classList.remove('loader');
     playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
+
+// Funkcja obsługująca przycisk "Search"
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", searchSongs);
+
+// Funkcja obsługująca wyszukiwanie
+function searchSongs() {
+    const searchTerm = document.getElementById("search-input").value.toLowerCase();
+
+    // Znajdź utwór na liście, który pasuje do wyszukiwania
+    const foundTrackIndex = music_list.findIndex((track) => {
+        return track.name.toLowerCase().includes(searchTerm) || track.artist.toLowerCase().includes(searchTerm);
+    });
+
+    if (foundTrackIndex !== -1) {
+        loadTrack(foundTrackIndex);
+        playTrack();
+    } else {
+        alert("Song not found.");
+    }
+}
 function nextTrack(){
     if(track_index < music_list.length - 1 && isRandom === false){
         track_index += 1;
