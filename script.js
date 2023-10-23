@@ -94,10 +94,6 @@ function playTrack() {
 
 let searchInput = document.getElementById('search-input');
 
-// Reference to the search button
-let searchButton = document.getElementById('search-button');
-
-// Add a new function to handle the search
 function searchSongs() {
     let query = searchInput.value.toLowerCase(); // Convert the search query to lowercase for case-insensitive search
     let foundIndex = -1;
@@ -119,12 +115,6 @@ function searchSongs() {
         alert('Song not found. Please try a different search.');
     }
 }
-
-// Set up an event listener to trigger the search on Enter key press
-searchInput.addEventListener('keyup', function(event) {
-    if (event.key === "Enter") {
-        searchSongs();
-    }
 
 function pauseTrack() {
     curr_track.pause();
