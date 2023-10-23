@@ -26,22 +26,15 @@ body {
     justify-content: center;
     }
     
+    
     .track-art {
     margin: 25px;
-    height: 250px;
-    width: 250px;
-    border:2px solid 	#FFFAFA;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    -moz-box-shadow: 0px 6px 5px black;
-    -webkit-box-shadow: 0px 6px 5px black;
+    width: 250px; /* Set the desired width */
+    height: 350px; /* Set the desired height */
+    border: 2px solid #000000;
+    background: center / cover no-repeat;
     box-shadow: 0px 6px 5px black;
-    -moz-border-radius:190px;
-    -webkit-border-radius:190px;
-    border-radius:190px;
-    }
-    
+}
     .now-playing {
     font-size: 1rem;
     }
@@ -146,9 +139,6 @@ body {
     .randomActive{
         color: black;
     }
-    .rotate {
-        animation: rotation 8s infinite linear;
-    }
     
     .loader {
       height: 70px;
@@ -164,7 +154,17 @@ body {
         margin: 0 5px;
         animation: animate 1.4s linear infinite;
     }
-      
+      @keyframes animate {
+        50% {
+          height: 20%;
+          background: #4286f4;
+        }
+    
+        100% {
+          background: #4286f4;
+          height: 100%;
+        }
+      }
       .stroke:nth-child(1){
           animation-delay: 0s;
       }
