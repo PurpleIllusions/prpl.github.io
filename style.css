@@ -30,7 +30,7 @@ body {
     margin: 25px;
     height: 250px;
     width: 250px;
-    border:2px solid 	#FFFAFA;
+    border:2px solid 	#000000;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -149,14 +149,7 @@ body {
     .rotate {
         animation: rotation 8s infinite linear;
     }
-    @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(359deg);
-        }
-    }
+
     .loader {
       height: 70px;
       display: flex;
@@ -171,17 +164,7 @@ body {
         margin: 0 5px;
         animation: animate 1.4s linear infinite;
     }
-      @keyframes animate {
-        50% {
-          height: 20%;
-          background: #4286f4;
-        }
-    
-        100% {
-          background: #4286f4;
-          height: 100%;
-        }
-      }
+      
       .stroke:nth-child(1){
           animation-delay: 0s;
       }
@@ -351,17 +334,7 @@ body {
     .randomActive{
         color: black;
     }
-    .rotate {
-        animation: rotation 8s infinite linear;
-    }
-    @keyframes rotation {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(359deg);
-        }
-    }
+    
     .loader {
       height: 70px;
       display: flex;
@@ -376,17 +349,6 @@ body {
         margin: 0 5px;
         animation: animate 1.4s linear infinite;
     }
-      @keyframes animate {
-        50% {
-          height: 20%;
-          background: #4286f4;
-        }
-    
-        100% {
-          background: #4286f4;
-          height: 100%;
-        }
-      }
       .stroke:nth-child(1){
           animation-delay: 0s;
       }
