@@ -92,6 +92,40 @@ function playTrack() {
     playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
 
+let searchInput = document.getElementById('search-input');
+
+// Reference to the search button
+let searchButton = document.getElementById('search-button');
+
+// Add a new function to handle the search
+function searchSongs() {
+    let query = searchInput.value.toLowerCase(); // Convert the search query to lowercase for case-insensitive search
+    let foundIndex = -1;
+
+    // Iterate through the music_list to find the matching song
+    for (let i = 0; i < music_list.length; i++) {
+        if (music_list[i].name.toLowerCase().includes(query) || music_list[i].artist.toLowerCase().includes(query)) {
+            foundIndex = i;
+            break;
+        }
+    }
+
+    if (foundIndex !== -1) {
+        // If a matching song is found, load and play it
+        loadTrack(foundIndex);
+        playTrack();
+    } else {
+        // Handle case when no matching song is found
+        alert('Song not found. Please try a different search.');
+    }
+}
+
+// Set up an event listener to trigger the search on Enter key press
+searchInput.addEventListener('keyup', function(event) {
+    if (event.key === "Enter") {
+        searchSongs();
+    }
+
 function pauseTrack() {
     curr_track.pause();
     isPlaying = false;
