@@ -28,7 +28,7 @@ body {
     
     .track-art {
     margin: 25px;
-    width: 350px; /* Set the width to your desired rectangle width */
+    width: 400px; /* Set the width to your desired rectangle width */
     height: 250px; /* Set the height to your desired rectangle height */
     border: 2px solid #000000;
     background-size: cover;
