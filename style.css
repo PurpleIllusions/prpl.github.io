@@ -37,7 +37,6 @@ body {
     -webkit-box-shadow: 0px 6px 5px black;
     box-shadow: 0px 6px 5px black;
 }
-
     
     .now-playing {
     font-size: 1rem;
@@ -144,6 +143,7 @@ body {
         color: black;
     }
     
+    
     .loader {
       height: 70px;
       display: flex;
@@ -156,7 +156,7 @@ body {
         width: 10px;
         border-radius: 50px;
         margin: 0 5px;
-        
+        animation: animate 1.4s linear infinite;
     }
       
       .stroke:nth-child(1){
