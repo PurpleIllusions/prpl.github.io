@@ -20,9 +20,7 @@ body {
     }
 
     .search-bar{
-        padding: 25px;
-    opacity: 0.8;
-    transition: opacity .2s;
+        padding: 8px;
     }
     
     .details {
