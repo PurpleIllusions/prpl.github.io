@@ -18,6 +18,12 @@ body {
       background-color: #9eb6b8;
      
     }
+
+    .search-bar{
+        border: 1px solid transparent;
+      padding: 30px;
+      border-radius: 20px;
+    }
     
     .details {
     display: flex;
