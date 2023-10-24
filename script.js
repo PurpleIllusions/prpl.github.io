@@ -82,14 +82,14 @@ function playpauseTrack(){
 function playTrack(){
     curr_track.play();
     isPlaying = true;
-    track_art.classList.add('rotate');
+
    
     playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
 function pauseTrack(){
     curr_track.pause();
     isPlaying = false;
-    track_art.classList.remove('rotate');
+   
     
     playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
@@ -98,11 +98,11 @@ function pauseTrack(){
 const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click", searchSongs);
 
-// Funkcja obsługująca wyszukiwanie
+
 function searchSongs() {
     const searchTerm = document.getElementById("search-input").value.toLowerCase();
 
-    // Znajdź utwór na liście, który pasuje do wyszukiwania
+    
     const foundTrackIndex = music_list.findIndex((track) => {
         return track.name.toLowerCase().includes(searchTerm) || track.artist.toLowerCase().includes(searchTerm);
     });
