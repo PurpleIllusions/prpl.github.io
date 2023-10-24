@@ -111,7 +111,7 @@ function searchSongs() {
         loadTrack(foundTrackIndex);
         playTrack();
     } else {
-        alert("Song not found.");
+        alert("Nie znaleziono utworu.");
     }
 }
 function nextTrack(){
