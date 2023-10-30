@@ -11,7 +11,7 @@ let seek_slider = document.querySelector('.seek_slider');
 let volume_slider = document.querySelector('.volume_slider');
 let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
-let randomIcon = document.querySelector('.fa-random');
+let randomIcon = document.querySelector('.fa-shuffle');
 let curr_track = document.createElement('audio');
 
 let track_index = 0;
