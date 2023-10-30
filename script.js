@@ -108,25 +108,28 @@ function pauseTrack(){
 
 
 
-// Funkcja obsługująca przycisk "Search"
-const searchButton = document.getElementById("search-button");
-searchButton.addEventListener("click", searchSongs);
+// JavaScript code for the search function
+function searchFunction() {
+    // Get the search input element by its ID
+    var input = document.getElementById("search-bar");
 
-// Funkcja obsługująca wyszukiwanie
-function searchSongs() {
-    const searchTerm = document.getElementById("search-input").value.toLowerCase();
-    
-    const foundTrackIndex = music_list.findIndex((track) => {
-        return track.name.toLowerCase().includes(searchTerm) || track.artist.toLowerCase().includes(searchTerm);
-    });
+    // Get the value entered by the user
+    var searchText = input.value;
 
-    if (foundTrackIndex !== -1) {
-        loadTrack(foundTrackIndex);
-        playTrack();
-    } else {
-        alert("Nie znaleziono utworu.");
-    }
+    // Perform your search logic with searchText
+    // For example, you can send the search query to a server or display search results on the page.
+
+    // You can also clear the input field after performing the search
+    input.value = "";
 }
+
+// Add an event listener to trigger the search function when the user presses Enter
+document.getElementById("search-bar").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        searchFunction();
+    }
+});
+
 function nextTrack(){
     if(track_index < music_list.length - 1 && isRandom === false){
         track_index += 1;
