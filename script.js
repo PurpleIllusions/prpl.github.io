@@ -106,13 +106,10 @@ function pauseTrack(){
     playpause_btn.innerHTML = '<i class="fa-solid fa-play"></i>';
 }
 
-// Funkcja obsługująca przycisk "Search"
-const searchButton = document.getElementById("search-button");
-searchButton.addEventListener("click", searchSongs);
+
 
 
 function searchSongs() {
-    const searchTerm = document.getElementById("search-input").value.toLowerCase();
 
     
     const foundTrackIndex = music_list.findIndex((track) => {
