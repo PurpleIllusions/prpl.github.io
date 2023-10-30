@@ -44,10 +44,7 @@ body {
 #search-input:focus {
     border-color: #007bff;
 }
-i {
-    font-size: 2rem; /* Adjust the size as needed */
-    cursor: pointer;
-}
+
 
     
     .details {
@@ -160,16 +157,16 @@ i {
     padding: 10px;
     }
     
-    i.fa-volume-down,
-    i.fa-volume-up {
+   
+    fa-solid fa-volume-high {
     padding: 10px;
     }
     
     i,
-    i.fa-play-circle,
-    i.fa-pause-circle,
-    i.fa-step-forward,
-    i.fa-step-backward,
+    i.fa-solid fa-play,
+    i.fa-solid fa-pause,
+    i.fa-solid fa-backward-step,
+    i.fa-solid fa-forward-step,
     p {
     cursor: pointer;
     }
