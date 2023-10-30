@@ -78,10 +78,12 @@ function randomTrack(){
 function playRandom(){
     isRandom = true;
     randomIcon.classList.add('randomActive');
+    shuffleButton.innerHTML = '<i class="fa-solid fa-shuffle" style="color: #728e11;"></i>';
 }
 function pauseRandom(){
     isRandom = false;
     randomIcon.classList.remove('randomActive');
+    shuffleButton.innerHTML = '<i class="fa-solid fa-shuffle"></i>';
 }
 function repeatTrack(){
     let current_index = track_index;
