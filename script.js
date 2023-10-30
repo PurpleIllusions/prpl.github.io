@@ -96,14 +96,14 @@ function playTrack(){
     isPlaying = true;
 
    
-    playpause_btn.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
+    playpause_btn.innerHTML = '<i class="fa-solid fa-pause"></i>';
 }
 function pauseTrack(){
     curr_track.pause();
     isPlaying = false;
    
     
-    playpause_btn.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
+    playpause_btn.innerHTML = '<i class="fa-solid fa-play"></i>';
 }
 
 // Funkcja obsługująca przycisk "Search"
