@@ -28,6 +28,12 @@ const music_list = [
     },
     {
         img: 'rip.jpg',
+        name: 'Rip',
+        artist: 'carti',
+        music: 'rip.mp3'
+    },
+    {
+        img: 'rip.jpg',
         name: 'Over',
         artist: 'carti',
         music: 'over.mp3'
