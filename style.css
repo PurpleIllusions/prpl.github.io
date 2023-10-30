@@ -5,7 +5,7 @@ body {
     }
     
     .player{
-      height: 90vh;
+      height: 95vh;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -22,7 +22,7 @@ body {
     .search-bar{
         
         border: 2px solid #000000;
-        padding: 8px;
+       
     }
 
     
