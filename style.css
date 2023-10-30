@@ -44,7 +44,10 @@ body {
 #search-input:focus {
     border-color: #007bff;
 }
-
+i {
+    font-size: 2rem; /* Adjust the size as needed */
+    cursor: pointer;
+}
 
     
     .details {
