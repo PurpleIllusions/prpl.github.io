@@ -22,13 +22,13 @@ let updateTimer;
 const music_list = [
     {
         img: 'rip.jpg',
-        name: 'rip',
+        name: 'Rip',
         artist: 'carti',
         music: 'rip.mp3'
     },
     {
         img: 'rip.jpg',
-        name: 'over',
+        name: 'Over',
         artist: 'carti',
         music: 'over.mp3'
     }
