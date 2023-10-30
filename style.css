@@ -71,7 +71,9 @@ i {
 
     
     .now-playing {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    text-align: center; 
+    margin-top: 10px;
     }
     
     .track-name {
