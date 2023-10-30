@@ -32,7 +32,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     width: 250px;
-    background-color: #cbf0f3;
+    background-color: #79d8e0;
     outline: none;
     transition: border-color 0.2s;
 }
@@ -172,10 +172,7 @@ body {
     p {
     cursor: pointer;
     }
-    .randomActive {
-    color: black; 
-    background-color: yellow; 
-}
+   
 
 
     i.fa-backward-step,
