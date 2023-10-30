@@ -108,9 +108,13 @@ function pauseTrack(){
 
 
 
+// Funkcja obsługująca przycisk "Search"
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", searchSongs);
 
+// Funkcja obsługująca wyszukiwanie
 function searchSongs() {
-
+    const searchTerm = document.getElementById("search-input").value.toLowerCase();
     
     const foundTrackIndex = music_list.findIndex((track) => {
         return track.name.toLowerCase().includes(searchTerm) || track.artist.toLowerCase().includes(searchTerm);
