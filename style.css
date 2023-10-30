@@ -26,7 +26,7 @@ body {
     height: 100%;
 }
 
-.search-input {
+.search-bar{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -37,11 +37,11 @@ body {
     transition: border-color 0.2s;
 }
 
-.search-input::placeholder {
+.search-bar::placeholder {
     color: #999;
 }
 
-.search-input:focus {
+.search-bar:focus {
     border-color: #007bff;
 }
 
