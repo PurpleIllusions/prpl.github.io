@@ -172,7 +172,10 @@ body {
     p {
     cursor: pointer;
     }
-   
+   .randomActive{
+        color: black,
+        style="color: #728e11;"
+    }
 
 
     i.fa-backward-step,
