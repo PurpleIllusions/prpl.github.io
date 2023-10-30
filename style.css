@@ -19,7 +19,7 @@ body {
       
     }
 
-   #search-bar {
+   .search-bar {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -30,11 +30,11 @@ body {
   transition: border-color 0.2s;
 }
 
-#search-bar::placeholder {
+.search-bar::placeholder {
   color: #999; /* Change the placeholder text color */
 }
 
-#search-bar:focus {
+.search-bar:focus {
   border-color: #007bff; /* Change the border color on focus */
 }
 
