@@ -111,24 +111,36 @@ function pauseTrack(){
 // JavaScript code for the search function
 function searchFunction() {
     // Get the search input element by its ID
-    var input = document.getElementById("search-bar");
+    var input = document.getElementById("search-input");
 
     // Get the value entered by the user
-    var searchText = input.value;
+    var searchText = input.value.toLowerCase(); // Convert to lowercase for case-insensitive search
 
-    // Perform your search logic with searchText
-    // For example, you can send the search query to a server or display search results on the page.
+    // Filter the music list based on the search query
+    var filteredMusicList = music_list.filter(function (track) {
+        return (
+            track.name.toLowerCase().includes(searchText) ||
+            track.artist.toLowerCase().includes(searchText)
+        );
+    });
+
+    // If there are matching results, load the first matching track
+    if (filteredMusicList.length > 0) {
+        loadTrack(music_list.indexOf(filteredMusicList[0]));
+        playTrack();
+    }
 
     // You can also clear the input field after performing the search
     input.value = "";
 }
 
 // Add an event listener to trigger the search function when the user presses Enter
-document.getElementById("search-bar").addEventListener("keydown", function (event) {
+document.getElementById("search-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         searchFunction();
     }
 });
+
 
 function nextTrack(){
     if(track_index < music_list.length - 1 && isRandom === false){
