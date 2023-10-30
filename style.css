@@ -5,7 +5,7 @@ body {
     }
     
     .player{
-      height: 80vh;
+      height: 95vh;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -16,14 +16,12 @@ body {
       padding: 30px;
       border-radius: 20px;
       background-color: #60bfc7;
-      justify-content: center;
-      flex-direction: column;
+      
     }
 
     .search-bar{
-        padding: 5px;
-        
-       
+        padding: 8px;
+    
     }
 
     
