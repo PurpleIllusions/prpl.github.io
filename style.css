@@ -19,10 +19,24 @@ body {
       
     }
 
-    .search-bar{
-        padding: 8px;
-    
-    }
+   #search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+  background-color: #f8f8f8;
+  outline: none; /* Remove the blue outline on focus */
+  transition: border-color 0.2s;
+}
+
+#search-bar::placeholder {
+  color: #999; /* Change the placeholder text color */
+}
+
+#search-bar:focus {
+  border-color: #007bff; /* Change the border color on focus */
+}
 
     
     .details {
