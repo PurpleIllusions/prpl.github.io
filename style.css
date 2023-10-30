@@ -16,7 +16,8 @@ body {
       padding: 30px;
       border-radius: 20px;
       background-color: #60bfc7;
-     
+      justify-content: center;
+      flex-direction: column;
     }
 
     .search-bar{
