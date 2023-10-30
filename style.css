@@ -181,6 +181,8 @@ body {
     i.fa-repeat,
     i.fa-pause {
         font-size: 2rem; 
+         align-items: center;
+
     }    
     
     
