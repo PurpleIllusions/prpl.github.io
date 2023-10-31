@@ -33,10 +33,10 @@ const music_list = [
         music: 'rip.mp3'
     },
     {
-        img: 'rip.jpg',
-        name: 'Over',
-        artist: 'carti',
-        music: 'over.mp3'
+        img: '2pac.jpg',
+        name: 'Hit Em Up',
+        artist: '2Pac',
+        music: 'Hit Em Up.mp3'
     }
 ];
 
