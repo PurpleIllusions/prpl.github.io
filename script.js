@@ -87,7 +87,7 @@ function playRandom(){
 
     
     var shuffleButton = document.querySelector('.shuffle-button');
-    shuffleButton.style.color = '#728e11'; 
+    shuffleButton.style.color = '#15d700'; 
 }
 function pauseRandom(){
     isRandom = false;
