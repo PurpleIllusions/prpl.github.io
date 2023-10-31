@@ -158,14 +158,13 @@ body {
     color: #000; /* Set the default color for the shuffle button */
 }
     .current-time,
-    .total-duration {
+    .total-duration,
+    i.fa-volume-high {
     padding: 10px;
     }
     
    
-    i.fa-volume-high {
-    padding: 10px;
-    }
+   
     
     i,
     i.fa-play,
@@ -175,9 +174,7 @@ body {
     p {
     cursor: pointer;
     }
-   .randomActive{
-        color: black;
-    }
+   
 
 
     i.fa-backward-step,
