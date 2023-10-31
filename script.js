@@ -23,14 +23,14 @@ const music_list = [
     {
         img: 'rip.jpg',
         name: 'Rip',
-        artist: 'carti',
+        artist: 'Playboi Carti',
         music: 'rip.mp3'
     },
     {
         img: 'rip.jpg',
-        name: 'Rip',
-        artist: 'carti',
-        music: 'rip.mp3'
+        name: 'Molly',
+        artist: 'Playboi Carti',
+        music: 'mollyy.mp3'
     },
     {
         img: '2pac.jpg',
