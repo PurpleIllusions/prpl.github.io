@@ -42,7 +42,7 @@ body {
 
 .search-bar::placeholder 
 {
-    color: #999;
+    color: #192735;
 }
 
 .search-bar:focus {
