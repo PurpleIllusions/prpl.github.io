@@ -82,14 +82,20 @@ function randomTrack(){
     isRandom ? pauseRandom() : playRandom();
 }
 function playRandom(){
-    isRandom = true;
+   isRandom = true;
     randomIcon.classList.add('randomActive');
-    shuffleButton.innerHTML = '<i class="fa-solid fa-shuffle" style="color: #728e11;"></i>';
+
+    
+    var shuffleButton = document.querySelector('.shuffle-button');
+    shuffleButton.style.color = '#728e11'; 
 }
 function pauseRandom(){
     isRandom = false;
     randomIcon.classList.remove('randomActive');
-    shuffleButton.innerHTML = '<i class="fa-solid fa-shuffle"></i>';
+
+   
+    var shuffleButton = document.querySelector('.shuffle-button');
+    shuffleButton.style.color = '';
 }
 function repeatTrack(){
     let current_index = track_index;
