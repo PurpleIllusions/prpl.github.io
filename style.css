@@ -153,7 +153,10 @@ body {
     .volume_slider {
     width: 30%;
     }
-    
+
+.shuffle-button {
+    color: #000; /* Set the default color for the shuffle button */
+}
     .current-time,
     .total-duration {
     padding: 10px;
