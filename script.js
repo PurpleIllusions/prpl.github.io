@@ -7,7 +7,7 @@ let play_button = document.querySelector('.play');
 let next = document.querySelector('.nastepny-utwor');
 let prev = document.querySelector('.poprzedni-utowr');
 let seek_slider = document.querySelector('.seek_slider');
-let volume_slider = document.querySelector('.volume_slider');
+let vol_slider = document.querySelector('.vol_slider');
 let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
 let randomIcon = document.querySelector('.fa-shuffle');
@@ -64,12 +64,12 @@ function wycisz() {
         
         curr_track.volume = 1.0; 
         mute = false;
-        volume_slider.value = 100; 
+        vol_slider.value = 100; 
     } else {
       
         curr_track.volume = 0; 
         mute = true;
-        volume_slider.value = 0; 
+        vol_slider.value = 0; 
     }
 }
 function reset(){
@@ -182,7 +182,7 @@ function seekTo(){
     curr_track.currentTime = seekto;
 }
 function setVolume(){
-    curr_track.volume = volume_slider.value / 100;
+    curr_track.volume = vol_slider.value / 100;
 }
 function setUpdate(){
     let seekPosition = 0;
