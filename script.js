@@ -1,6 +1,6 @@
 let now_playing = document.querySelector('.now-playing');
 let track_art = document.querySelector('.track-art');
-let nazwaUtw = document.querySelector('.track-name');
+let nazwaUtw = document.querySelector('.nazwa-utw');
 let track_artist = document.querySelector('.track-artist');
 
 let playpause_btn = document.querySelector('.play');
