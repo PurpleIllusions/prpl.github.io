@@ -39,9 +39,9 @@ const lista_utworow = [
     }
 ];
 
-loadTrack(indexUtw);
+load_song(indexUtw);
 
-function loadTrack(indexUtw){
+function load_song(indexUtw){
     clearInterval(update_timer);
     reset();
 
@@ -59,7 +59,7 @@ function loadTrack(indexUtw){
     
 }
 
-function toggleMute() {
+function wycisz() {
     if (mute) {
         
         curr_track.volume = 1.0; 
@@ -99,7 +99,7 @@ function pauseRandom(){
 }
 function repeatTrack(){
     let current_index = indexUtw;
-    loadTrack(current_index);
+    load_song(current_index);
     playTrack();
 }
 function playpauseTrack(){
@@ -140,7 +140,7 @@ function searchFunction() {
 
     // If there are matching results, load the first matching track
     if (filteredMusicList.length > 0) {
-        loadTrack(lista_utworow.indexOf(filteredMusicList[0]));
+        load_song(lista_utworow.indexOf(filteredMusicList[0]));
         playTrack();
     }
 
@@ -165,7 +165,7 @@ function nextTrack(){
     }else{
         indexUtw = 0;
     }
-    loadTrack(indexUtw);
+    load_song(indexUtw);
     playTrack();
 }
 function prevTrack(){
@@ -174,7 +174,7 @@ function prevTrack(){
     }else{
         indexUtw = lista_utworow.length -1;
     }
-    loadTrack(indexUtw);
+    load_song(indexUtw);
     playTrack();
 }
 function seekTo(){
