@@ -6,14 +6,13 @@ let track_artist = document.querySelector('.track-artist');
 let playpause_btn = document.querySelector('.playpause-track');
 let next_btn = document.querySelector('.next-track');
 let prev_btn = document.querySelector('.prev-track');
-let isMuted = false;
 let seek_slider = document.querySelector('.seek_slider');
 let volume_slider = document.querySelector('.volume_slider');
 let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
 let randomIcon = document.querySelector('.fa-shuffle');
 let curr_track = document.createElement('audio');
-
+let isMuted = false;
 let track_index = 0;
 let isPlaying = false;
 let isRandom = false;
@@ -62,15 +61,15 @@ function loadTrack(track_index){
 
 function toggleMute() {
     if (isMuted) {
-        // Jeśli jest wyciszone, włącz dźwięk
-        curr_track.volume = 1.0; // Ustaw głośność na 1 (100%)
+        
+        curr_track.volume = 1.0; 
         isMuted = false;
-        volume_slider.value = 100; // Aktualizuj suwak głośności
+        volume_slider.value = 100; 
     } else {
-        // Jeśli nie jest wyciszone, wycisz dźwięk
-        curr_track.volume = 0; // Ustaw głośność na 0 (0%)
+      
+        curr_track.volume = 0; 
         isMuted = true;
-        volume_slider.value = 0; // Aktualizuj suwak głośności
+        volume_slider.value = 0; 
     }
 }
 function reset(){
