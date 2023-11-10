@@ -16,7 +16,7 @@ let mute = false;
 let indexUtw = 0;
 let isPlaying = false;
 let isRandom = false;
-let updateTimer;
+let update_timer;
 
 const lista_utworow = [
     {
@@ -42,7 +42,7 @@ const lista_utworow = [
 loadTrack(indexUtw);
 
 function loadTrack(indexUtw){
-    clearInterval(updateTimer);
+    clearInterval(update_timer);
     reset();
 
     curr_track.src = lista_utworow[indexUtw].music;
@@ -53,7 +53,7 @@ function loadTrack(indexUtw){
     nazwa_artysty.textContent = lista_utworow[indexUtw].artist;
     now_playing.textContent = "Odtwarzanie " + (indexUtw + 1) + " z " + lista_utworow.length + " utworów";
 
-    updateTimer = setInterval(setUpdate, 1000);
+    update_timer = setInterval(setUpdate, 1000);
 
     curr_track.addEventListener('ended', nextTrack);
     
