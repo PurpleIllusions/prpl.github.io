@@ -98,21 +98,21 @@ body {
         color: black;
     }
     
-    .repeat-track,
-    .random-track,
-    .playpause-track,
-    .prev-track,
-    .next-track {
+    .powtorz,
+    .losowy,
+    .play,
+    .poprzedni-utwor,
+    .nastepny-utwor {
     padding: 25px;
     opacity: 0.8;
     transition: opacity .2s;
     }
     
-    .repeat-track:hover,
-    .random-track:hover,
-    .playpause-track:hover,
-    .prev-track:hover,
-    .next-track:hover
+    .powtorz:hover,
+    .losowy:hover,
+    .play:hover,
+    .nastepny-utwor:hover,
+    .poprzedni-utwor:hover
     {
     opacity: 1.0;
     }
