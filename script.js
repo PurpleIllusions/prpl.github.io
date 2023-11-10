@@ -15,7 +15,7 @@ let curr_track = document.createElement('audio');
 let mute = false;
 let indexUtw = 0;
 let isPlaying = false;
-let isRandom = false;
+let losowy_stan = false;
 let update_timer;
 
 const lista_utworow = [
@@ -78,10 +78,10 @@ function reset(){
     seek_slider.value = 0;
 }
 function losowy_utwor(){
-    isRandom ? stop_losowy() : play_losowy();
+   losowy_stan ? stop_losowy() : play_losowy();
 }
 function play_losowy(){
-   isRandom = true;
+   losowy_stan = true;
     randomIcon.classList.add('randomActive');
 
     
@@ -90,7 +90,7 @@ function play_losowy(){
     
 }
 function stop_losowy(){
-    isRandom = false;
+    losowy_stan = false;
     randomIcon.classList.remove('randomActive');
 
    
@@ -157,9 +157,9 @@ document.getElementById("search-input").addEventListener("keydown", function (ev
 
 
 function nextTrack(){
-    if(indexUtw < lista_utworow.length - 1 && isRandom === false){
+    if(indexUtw < lista_utworow.length - 1 && losowy_stan === false){
         indexUtw += 1;
-    }else if(indexUtw < lista_utworow.length - 1 && isRandom === true){
+    }else if(indexUtw < lista_utworow.length - 1 && losowy_stan === true){
         let random_index = Number.parseInt(Math.random() * lista_utworow.length);
         indexUtw = random_index;
     }else{
