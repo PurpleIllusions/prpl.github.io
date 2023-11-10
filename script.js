@@ -3,9 +3,9 @@ let okladkaUtw = document.querySelector('.okladka');
 let nazwaUtw = document.querySelector('.nazwa-utw');
 let nazwa_artysty = document.querySelector('.artysta');
 
-let playpause_btn = document.querySelector('.play');
-let next_btn = document.querySelector('.nastepny-utwor');
-let prev_btn = document.querySelector('.poprzedni-utowr');
+let play_button = document.querySelector('.play');
+let next = document.querySelector('.nastepny-utwor');
+let prev = document.querySelector('.poprzedni-utowr');
 let seek_slider = document.querySelector('.seek_slider');
 let volume_slider = document.querySelector('.volume_slider');
 let curr_time = document.querySelector('.current-time');
@@ -110,14 +110,14 @@ function playTrack(){
     isPlaying = true;
 
    
-    playpause_btn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+    play_button.innerHTML = '<i class="fa-solid fa-pause"></i>';
 }
 function pauseTrack(){
     curr_track.pause();
     isPlaying = false;
    
     
-    playpause_btn.innerHTML = '<i class="fa-solid fa-play"></i>';
+    play_button.innerHTML = '<i class="fa-solid fa-play"></i>';
 }
 
 
