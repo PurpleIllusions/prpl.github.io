@@ -29,7 +29,7 @@ body {
         height: 100%;
                      }
 
-.search-bar {
+.search {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -40,12 +40,12 @@ body {
     transition: border-color 0.2s;
             }
 
-.search-bar::placeholder 
+.search::placeholder 
 {
     color: #192735;
 }
 
-.search-bar:focus {
+.search:focus {
     border-color: #007bff;
 }
 
@@ -86,7 +86,7 @@ body {
         font-size: 1.5rem;
     }
     
-    .buttons {
+    .button {
         display: flex;
         flex-direction: row;
         justify-content: center; 
