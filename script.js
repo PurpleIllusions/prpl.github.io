@@ -18,7 +18,7 @@ let isPlaying = false;
 let isRandom = false;
 let updateTimer;
 
-const music_list = [
+const lista_utworow = [
     {
         img: 'rip.jpg',
         name: 'Rip',
@@ -45,13 +45,13 @@ function loadTrack(indexUtw){
     clearInterval(updateTimer);
     reset();
 
-    curr_track.src = music_list[indexUtw].music;
+    curr_track.src = lista_utworow[indexUtw].music;
     curr_track.load();
 
-    okladkaUtw.style.backgroundImage = "url(" + music_list[indexUtw].img + ")";
-    nazwaUtw.textContent = music_list[indexUtw].name;
-    nazwa_artysty.textContent = music_list[indexUtw].artist;
-    now_playing.textContent = "Odtwarzanie " + (indexUtw + 1) + " z " + music_list.length + " utworów";
+    okladkaUtw.style.backgroundImage = "url(" + lista_utworow[indexUtw].img + ")";
+    nazwaUtw.textContent = lista_utworow[indexUtw].name;
+    nazwa_artysty.textContent = lista_utworow[indexUtw].artist;
+    now_playing.textContent = "Odtwarzanie " + (indexUtw + 1) + " z " + lista_utworow.length + " utworów";
 
     updateTimer = setInterval(setUpdate, 1000);
 
@@ -131,7 +131,7 @@ function searchFunction() {
     var searchText = input.value.toLowerCase(); 
 
   
-    var filteredMusicList = music_list.filter(function (track) {
+    var filteredMusicList = lista_utworow.filter(function (track) {
         return (
             track.name.toLowerCase().includes(searchText) ||
             track.artist.toLowerCase().includes(searchText)
@@ -140,7 +140,7 @@ function searchFunction() {
 
     // If there are matching results, load the first matching track
     if (filteredMusicList.length > 0) {
-        loadTrack(music_list.indexOf(filteredMusicList[0]));
+        loadTrack(lista_utworow.indexOf(filteredMusicList[0]));
         playTrack();
     }
 
@@ -157,10 +157,10 @@ document.getElementById("search-input").addEventListener("keydown", function (ev
 
 
 function nextTrack(){
-    if(indexUtw < music_list.length - 1 && isRandom === false){
+    if(indexUtw < lista_utworow.length - 1 && isRandom === false){
         indexUtw += 1;
-    }else if(indexUtw < music_list.length - 1 && isRandom === true){
-        let random_index = Number.parseInt(Math.random() * music_list.length);
+    }else if(indexUtw < lista_utworow.length - 1 && isRandom === true){
+        let random_index = Number.parseInt(Math.random() * lista_utworow.length);
         indexUtw = random_index;
     }else{
         indexUtw = 0;
@@ -172,7 +172,7 @@ function prevTrack(){
     if(indexUtw > 0){
         indexUtw -= 1;
     }else{
-        indexUtw = music_list.length -1;
+        indexUtw = lista_utworow.length -1;
     }
     loadTrack(indexUtw);
     playTrack();
