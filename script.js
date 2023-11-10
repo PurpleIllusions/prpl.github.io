@@ -1,5 +1,5 @@
 let now_playing = document.querySelector('.now-playing');
-let track_art = document.querySelector('.track-art');
+let okladkaUtw = document.querySelector('.okladka');
 let nazwaUtw = document.querySelector('.nazwa-utw');
 let track_artist = document.querySelector('.track-artist');
 
@@ -48,7 +48,7 @@ function loadTrack(indexUtw){
     curr_track.src = music_list[indexUtw].music;
     curr_track.load();
 
-    track_art.style.backgroundImage = "url(" + music_list[indexUtw].img + ")";
+    okladkaUtw.style.backgroundImage = "url(" + music_list[indexUtw].img + ")";
     nazwaUtw.textContent = music_list[indexUtw].name;
     track_artist.textContent = music_list[indexUtw].artist;
     now_playing.textContent = "Odtwarzanie " + (indexUtw + 1) + " z " + music_list.length + " utworów";
