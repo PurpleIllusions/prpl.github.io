@@ -12,7 +12,7 @@ let curr_time = document.querySelector('.current-time');
 let total_duration = document.querySelector('.total-duration');
 let randomIcon = document.querySelector('.fa-shuffle');
 let curr_track = document.createElement('audio');
-let isMuted = false;
+let mute = false;
 let indexUtw = 0;
 let isPlaying = false;
 let isRandom = false;
@@ -60,15 +60,15 @@ function loadTrack(indexUtw){
 }
 
 function toggleMute() {
-    if (isMuted) {
+    if (mute) {
         
         curr_track.volume = 1.0; 
-        isMuted = false;
+        mute = false;
         volume_slider.value = 100; 
     } else {
       
         curr_track.volume = 0; 
-        isMuted = true;
+        mute = true;
         volume_slider.value = 0; 
     }
 }
