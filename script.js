@@ -77,10 +77,10 @@ function reset(){
     total_duration.textContent = "00:00";
     seek_slider.value = 0;
 }
-function randomTrack(){
-    isRandom ? pauseRandom() : playRandom();
+function losowy_utwor(){
+    isRandom ? stop_losowy() : play_losowy();
 }
-function playRandom(){
+function play_losowy(){
    isRandom = true;
     randomIcon.classList.add('randomActive');
 
@@ -89,7 +89,7 @@ function playRandom(){
     shuffleButton.style.color = '#229704'; 
     
 }
-function pauseRandom(){
+function stop_losowy(){
     isRandom = false;
     randomIcon.classList.remove('randomActive');
 
