@@ -13,7 +13,7 @@ body {
       
              }
 
-    .player  {
+    .odtwarzacz  {
         flex-direction: column;
         justify-content: center;
         height: 95vh;
