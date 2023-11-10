@@ -13,7 +13,7 @@ let total_duration = document.querySelector('.total-duration');
 let randomIcon = document.querySelector('.fa-shuffle');
 let curr_track = document.createElement('audio');
 let isMuted = false;
-let track_index = 0;
+let indexUtw = 0;
 let isPlaying = false;
 let isRandom = false;
 let updateTimer;
@@ -39,19 +39,19 @@ const music_list = [
     }
 ];
 
-loadTrack(track_index);
+loadTrack(indexUtw);
 
-function loadTrack(track_index){
+function loadTrack(indexUtw){
     clearInterval(updateTimer);
     reset();
 
-    curr_track.src = music_list[track_index].music;
+    curr_track.src = music_list[indexUtw].music;
     curr_track.load();
 
-    track_art.style.backgroundImage = "url(" + music_list[track_index].img + ")";
-    track_name.textContent = music_list[track_index].name;
-    track_artist.textContent = music_list[track_index].artist;
-    now_playing.textContent = "Odtwarzanie " + (track_index + 1) + " z " + music_list.length + " utworów";
+    track_art.style.backgroundImage = "url(" + music_list[indexUtw].img + ")";
+    track_name.textContent = music_list[indexUtw].name;
+    track_artist.textContent = music_list[indexUtw].artist;
+    now_playing.textContent = "Odtwarzanie " + (indexUtw + 1) + " z " + music_list.length + " utworów";
 
     updateTimer = setInterval(setUpdate, 1000);
 
@@ -98,7 +98,7 @@ function pauseRandom(){
     shuffleButton.style.color = '';
 }
 function repeatTrack(){
-    let current_index = track_index;
+    let current_index = indexUtw;
     loadTrack(current_index);
     playTrack();
 }
@@ -157,24 +157,24 @@ document.getElementById("search-input").addEventListener("keydown", function (ev
 
 
 function nextTrack(){
-    if(track_index < music_list.length - 1 && isRandom === false){
-        track_index += 1;
-    }else if(track_index < music_list.length - 1 && isRandom === true){
+    if(indexUtw < music_list.length - 1 && isRandom === false){
+        indexUtw += 1;
+    }else if(indexUtw < music_list.length - 1 && isRandom === true){
         let random_index = Number.parseInt(Math.random() * music_list.length);
-        track_index = random_index;
+        indexUtw = random_index;
     }else{
-        track_index = 0;
+        indexUtw = 0;
     }
-    loadTrack(track_index);
+    loadTrack(indexUtw);
     playTrack();
 }
 function prevTrack(){
-    if(track_index > 0){
-        track_index -= 1;
+    if(indexUtw > 0){
+        indexUtw -= 1;
     }else{
-        track_index = music_list.length -1;
+        indexUtw = music_list.length -1;
     }
-    loadTrack(track_index);
+    loadTrack(indexUtw);
     playTrack();
 }
 function seekTo(){
