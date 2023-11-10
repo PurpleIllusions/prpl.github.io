@@ -122,15 +122,15 @@ function pauseTrack(){
 
 
 
-// JavaScript code for the search function
+// search
 function searchFunction() {
-    // Get the search input element by its ID
+    
     var input = document.getElementById("search-input");
 
-    // Get the value entered by the user
-    var searchText = input.value.toLowerCase(); // Convert to lowercase for case-insensitive search
+    
+    var searchText = input.value.toLowerCase(); 
 
-    // Filter the music list based on the search query
+  
     var filteredMusicList = music_list.filter(function (track) {
         return (
             track.name.toLowerCase().includes(searchText) ||
@@ -144,11 +144,11 @@ function searchFunction() {
         playTrack();
     }
 
-    // You can also clear the input field after performing the search
+  
     input.value = "";
 }
 
-// Add an event listener to trigger the search function when the user presses Enter
+
 document.getElementById("search-input").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         searchFunction();
