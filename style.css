@@ -117,7 +117,7 @@ body {
     opacity: 1.0;
     }
     
-    .slider_container {
+    .slider {
         display: flex;
         justify-content: center;
         align-items: center;
