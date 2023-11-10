@@ -23,19 +23,19 @@ const lista_utworow = [
         img: 'rip.jpg',
         name: 'Rip',
         artist: 'Playboi Carti',
-        music: 'rip.mp3'
+        song: 'rip.mp3'
     },
     {
         img: 'rip.jpg',
         name: 'Molly',
         artist: 'Playboi Carti',
-        music: 'mollyy.mp3'
+        song: 'mollyy.mp3'
     },
     {
         img: '2pac.jpg',
         name: 'Hit Em Up',
         artist: '2Pac',
-        music: 'Hit Em Up.mp3'
+        song: 'Hit Em Up.mp3'
     }
 ];
 
@@ -45,7 +45,7 @@ function loadTrack(indexUtw){
     clearInterval(update_timer);
     reset();
 
-    curr_track.src = lista_utworow[indexUtw].music;
+    curr_track.src = lista_utworow[indexUtw].song;
     curr_track.load();
 
     okladkaUtw.style.backgroundImage = "url(" + lista_utworow[indexUtw].img + ")";
