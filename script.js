@@ -5,7 +5,7 @@ let nazwa_artysty = document.querySelector('.artysta');
 
 let play_button = document.querySelector('.play');
 let next = document.querySelector('.nastepny-utwor');
-let prev = document.querySelector('.poprzedni-utowr');
+let prev = document.querySelector('.poprzedni-utwor');
 let seek_slider = document.querySelector('.seek_slider');
 let vol_slider = document.querySelector('.vol_slider');
 let curr_time = document.querySelector('.current-time');
