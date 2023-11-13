@@ -99,7 +99,7 @@ function stop_losowy(){
 }
 function repeatTrack(){
     let current_index = indexUtw;
-    load_song(current_index);
+    load_music(current_index);
     playTrack();
 }
 function playpauseTrack(){
@@ -138,9 +138,8 @@ function searchFunction() {
         );
     });
 
-    // If there are matching results, load the first matching track
     if (filteredMusicList.length > 0) {
-        load_song(lista_utworow.indexOf(filteredMusicList[0]));
+        load_music(lista_utworow.indexOf(filteredMusicList[0]));
         playTrack();
     }
 
@@ -165,7 +164,7 @@ function nextTrack(){
     }else{
         indexUtw = 0;
     }
-    load_song(indexUtw);
+    load_music(indexUtw);
     playTrack();
 }
 function prevTrack(){
@@ -174,7 +173,7 @@ function prevTrack(){
     }else{
         indexUtw = lista_utworow.length -1;
     }
-    load_song(indexUtw);
+    load_music(indexUtw);
     playTrack();
 }
 function seekTo(){
