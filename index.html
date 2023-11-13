@@ -9,40 +9,34 @@
     <script src="https://kit.fontawesome.com/f39428d239.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-   <div class="odtwarzacz">
-       <div class="obwod">
+    <body>
+        <div class="odtwarzacz">
+            <div class="obwod">
 
-           
-               <div class="funkcje">
-               
-                   <div class="search">
-                   <input type="text" id="search-input" placeholder="Szukaj piosenki">
-                   </div>
-                   <div class="now-playing">Odtwarzanie x z y </div>
-                   <div class="okladka"></div>
-                   <div class="nazwa-utw">Nazwa utworu</div>
-                   <div class="artysta">Nazwa artysty</div>
+                <div class="funkcje">
+                        <div class="search"> <input type="text" id="search-input" placeholder="Szukaj piosenki"> </div>
+                            <div class="now-playing">Odtwarzanie x z y </div>
+                            <div class="okladka"></div>
+                            <div class="nazwa-utw">Nazwa utworu </div>
+                            <div class="artysta">Nazwa artysty</div>
+                </div>
+
+                
+                <div class="slider">
+                   <div class="current-time">00:00</div>
+                   <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                   <div class="total-duration">00:00</div>
+                </div>
+
+               <div class="slider">
+                   <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="1" max="100" value="99" class="vol_slider" onchange="setVolume()">
                </div>
-
-          
-
-            
-           <div class="slider">
-               <div class="current-time">00:00</div>
-                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-                <div class="total-duration">00:00</div>
-           </div>
-
-           <div class="slider">
-               <i class="fa-solid fa-volume-high"></i>
-                <input type="range" min="1" max="100" value="99" class="vol_slider" onchange="setVolume()">
-           </div>
 
 
            <div class="button">
                <div class="losowy" onclick="losowy_utwor()">
-                   <i class="fa-solid fa-shuffle shuffle-button"></i>
+               <i class="fa-solid fa-shuffle shuffle-button"></i>
                </div>
                <div class="poprzedni-utwor" onclick="prevTrack()">
                     <i class="fa-solid fa-backward-step"></i>
@@ -59,10 +53,8 @@
            </div>
 
        
-
-            
+           </div>
        </div>
-   </div>
-
-</body>
+        
+    </body>
 </html>
