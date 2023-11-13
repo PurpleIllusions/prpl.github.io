@@ -39,9 +39,9 @@ const lista_utworow = [
     }
 ];
 
-load_song(indexUtw);
+load_music(indexUtw);
 
-function load_song(indexUtw){
+function load_music(indexUtw){
     clearInterval(update_timer);
     reset();
 
