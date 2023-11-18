@@ -191,5 +191,16 @@ body {
     }    
     
     
+.seek_slider,
+.vol_slider {
+    border-radius: 10px; /* zaokrąglone krawędzie slidera */
+}
+
+.seek_slider::-webkit-slider-thumb,
+.vol_slider::-webkit-slider-thumb,
+.seek_slider::-moz-range-thumb,
+.vol_slider::-moz-range-thumb {
+    border-radius: 50%; /* zaokrąglone krawędzie kursora (thumb) */
+}
 
     
