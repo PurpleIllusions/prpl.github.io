@@ -36,7 +36,7 @@ const lista_utworow = [
         name: 'Hit Em Up',
         artist: '2Pac',
         song: 'Hit Em Up.mp3'
-    }
+    },
     {
         img: 'agc.jpg',
         name: 'i need u',
