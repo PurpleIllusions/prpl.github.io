@@ -219,10 +219,8 @@ input[type="range"] {
 .vol_slider::-webkit-slider-thumb,
 .seek_slider::-moz-range-thumb,
 .vol_slider::-moz-range-thumb {
-    width: 20px; /* Szerokość kursora */
-    height: 20px; /* Wysokość kursora */
+    width: 15px;
+    height: 15px;
     background-color: #fff; /* Kolor tła kursora */
-    border: 2px solid #3498db; /* Kolor obramowania kursora */
-    border-radius: 50%; /* Zaokrąglenie kursora */
-    cursor: pointer; /* Zmiana kursora na pointer */
+    border-radius: 50%;
 }
