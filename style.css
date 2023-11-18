@@ -210,6 +210,5 @@ body {
 .vol_slider::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background-color: #fff; 
     border-radius: 50%;
 }
