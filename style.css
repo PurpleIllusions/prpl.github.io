@@ -121,7 +121,8 @@ body {
         align-items: center;
     }
     
-    .seek_slider, .vol_slider {
+    .seek_slider, 
+    .vol_slider {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -129,6 +130,7 @@ body {
         background: #5a4a4a;
         -webkit-transition: .2s;
         transition: opacity .2s;
+        border-radius: 10px;
     }
     
 
@@ -180,34 +182,17 @@ body {
     }    
     
     
-.seek_slider,
-.vol_slider {
-    border-radius: 10px; /* zaokrąglone krawędzie slidera */
-}
+
 
 .seek_slider::-webkit-slider-thumb,
 .vol_slider::-webkit-slider-thumb,
 .seek_slider::-moz-range-thumb,
 .vol_slider::-moz-range-thumb {
-    border-radius: 50%; /* zaokrąglone krawędzie kursora (thumb) */
+    border-radius: 50%; 
 }
 
-/* Resetowanie stylów dla sliderów */
-input[type="range"] {
-    -webkit-appearance: none;
-    -moz-apperance: none;
-    appearance: none;
-}
 
-/* Dostosowanie slidera */
-.seek_slider,
-.vol_slider {
-    border: none; /* Usunięcie domyślnego borderu */
-    outline: none; /* Usunięcie domyślnej obwiedni (outline) po kliknięciu */
-    cursor: pointer; /* Zmiana kursora na pointer */
-}
 
-/
 .seek_slider::-webkit-slider-thumb,
 .vol_slider::-webkit-slider-thumb,
 .seek_slider::-moz-range-thumb,
@@ -221,6 +206,6 @@ input[type="range"] {
 .vol_slider::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background-color: #fff; /* Kolor tła kursora */
+    background-color: #fff; 
     border-radius: 50%;
 }
