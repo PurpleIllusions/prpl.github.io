@@ -169,7 +169,8 @@ body {
     
     i,
     i.fa-play,
-    .slider,
+    .vol_slider,
+    .seek_slider,
     i.fa-pause,
     i.fa-backward-step,
     i.fa-forward-step,
