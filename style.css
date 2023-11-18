@@ -215,18 +215,14 @@ input[type="range"] {
     cursor: pointer; 
 }
 
-/* Dostosowanie ikony na kursorze (thumb) */
-.seek_slider::-webkit-slider-thumb::before,
-.vol_slider::-webkit-slider-thumb::before,
-.seek_slider::-moz-range-thumb::before,
-.vol_slider::-moz-range-thumb::before {
-    content: '\f111'; /* Kod ikony Font Awesome */
-    font-family: 'FontAwesome'; /* Nazwa czcionki ikony */
-    font-size: 14px; /* Rozmiar ikony */
-    color: #3498db; /* Kolor ikony */
-    position: absolute; /* Pozycja ikony */
-    top: 50%; /* Pozycja pionowa ikony */
-    left: 50%; /* Pozycja pozioma ikony */
-    transform: translate(-50%, -50%); /* Dopasowanie ikony do środka kursora */
+.seek_slider::-webkit-slider-thumb,
+.vol_slider::-webkit-slider-thumb,
+.seek_slider::-moz-range-thumb,
+.vol_slider::-moz-range-thumb {
+    width: 20px; /* Szerokość kursora */
+    height: 20px; /* Wysokość kursora */
+    background-color: #fff; /* Kolor tła kursora */
+    border: 2px solid #3498db; /* Kolor obramowania kursora */
+    border-radius: 50%; /* Zaokrąglenie kursora */
+    cursor: pointer; /* Zmiana kursora na pointer */
 }
-    
