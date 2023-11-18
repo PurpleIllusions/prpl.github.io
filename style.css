@@ -203,4 +203,27 @@ body {
     border-radius: 50%; /* zaokrąglone krawędzie kursora (thumb) */
 }
 
+/* Resetowanie stylów dla sliderów */
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    appearance: none;
+}
+
+/* Dostosowanie slidera */
+.seek_slider,
+.vol_slider {
+    border: none; /* Usunięcie domyślnego borderu */
+    outline: none; /* Usunięcie domyślnej obwiedni (outline) po kliknięciu */
+    cursor: pointer; /* Zmiana kursora na pointer */
+}
+
+/* Dostosowanie kursora (thumb) */
+.seek_slider::-webkit-slider-thumb,
+.vol_slider::-webkit-slider-thumb,
+.seek_slider::-moz-range-thumb,
+.vol_slider::-moz-range-thumb {
+    cursor: pointer; /* Zmiana kursora na pointer */
+}
+
     
