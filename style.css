@@ -3,7 +3,7 @@ body {
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
     font-weight: bold;
     }
     
@@ -28,7 +28,6 @@ body {
 .current-time,
 .total-duration {
     font-size: 1.2rem;
-    font-weight: bold;
 }
 
 .search {
