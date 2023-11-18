@@ -25,7 +25,11 @@ body {
         
              }
 
+.current-time,
+.total-duration {
+    font-size: 1.2rem;
 
+}
 
 .search {
     padding: 10px;
