@@ -1,6 +1,8 @@
 body {
-    background: rgb(2,1,27);
-    background: linear-gradient(90deg, rgba(2,1,27,1) 0%, rgba(87,53,156,1) 50%, rgba(1,29,34,1) 100%);
+    background-image: url('tlo.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
     font-family: Tahoma, sans-serif;
     font-weight: bold;
     }
