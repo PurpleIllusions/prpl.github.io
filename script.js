@@ -37,6 +37,12 @@ const lista_utworow = [
         artist: '2Pac',
         song: 'Hit Em Up.mp3'
     }
+    {
+        img: 'agc.jpg',
+        name: 'i need u',
+        artist: 'Ken Carson',
+        song: 'need u.mp3'
+    }
 ];
 
 load_music(indexUtw);
