@@ -131,19 +131,7 @@ body {
         transition: opacity .2s;
     }
     
-    .seek_slider::-webkit-slider-thumb,
-    .vol_slider::-webkit-slider-thumb
-    {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 3px solid #652e78;
-    cursor: grab;
-    border-radius: 100%;
-    }
+
     
     .seek_slider:hover,
     .vol_slider:hover {
