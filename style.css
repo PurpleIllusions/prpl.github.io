@@ -198,7 +198,7 @@ body {
 .seek_slider::-moz-range-thumb,
 .vol_slider::-moz-range-thumb {
     cursor: pointer; 
-    color: FFFAF0;
+    background-color: FFFAF0;
 }
 
 .seek_slider::-webkit-slider-thumb,
