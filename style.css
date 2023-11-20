@@ -1,8 +1,5 @@
 body {
-    background-image: url('tlo.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
+    background-color: #5b6a6a;
     font-family: Verdana, sans-serif;
     font-weight: bold;
     }
