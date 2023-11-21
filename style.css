@@ -135,7 +135,7 @@ body {
         -moz-appearance: none;
         appearance: none;
         height: 5px;
-        background: #343638;
+        background: #f0f0f0;
         -webkit-transition: .2s;
         transition: opacity .2s;
         border-radius: 10px;
