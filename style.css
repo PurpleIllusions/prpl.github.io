@@ -203,14 +203,14 @@ body {
 
 .seek_slider::-webkit-slider-thumb,
 .vol_slider::-webkit-slider-thumb {
-    background: #000000;
+    background: #e4e3e3;
     cursor: pointer;
 }
 
 
 .seek_slider::-moz-range-thumb,
 .vol_slider::-moz-range-thumb {
-    background: #000000;
+    background: #e4e3e3;
     cursor: pointer;
 }
 
