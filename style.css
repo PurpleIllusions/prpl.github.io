@@ -194,12 +194,19 @@ body {
 
 
 .seek_slider::-webkit-slider-thumb,
-.vol_slider::-webkit-slider-thumb,
+.vol_slider::-webkit-slider-thumb {
+    background-color: #FFFAF0;
+    cursor: pointer;
+}
+
+
 .seek_slider::-moz-range-thumb,
 .vol_slider::-moz-range-thumb {
-    cursor: pointer; 
-    background-color: FFFAF0;
+    background-color: #FFFAF0;
+    cursor: pointer;
 }
+
+
 
 .seek_slider::-webkit-slider-thumb,
 .vol_slider::-webkit-slider-thumb,
