@@ -21,7 +21,7 @@ let update_timer;
 const lista_utworow = [
     
     {
-        img: 'jpgs/die lit.jpg',
+        img: 'jpgs/dielit.jpg',
         name: 'Molly',
         artist: 'Playboi Carti',
         song: 'muzyka/molly.mp3'
@@ -39,7 +39,7 @@ const lista_utworow = [
         song: 'muzyka/need u.mp3'
     }.
     {
-        img: 'jpgs/die lit.jpg',
+        img: 'jpgs/dielit.jpg',
         name: 'Rip',
         artist: 'Playboi Carti',
         song: 'muzyka/rip.mp3'
