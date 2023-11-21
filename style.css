@@ -1,5 +1,5 @@
 body {
-    background-color: #232b34;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(69,25,29,1) 39%, rgba(209,35,47,1) 100%);
     font-family: Verdana, sans-serif;
     font-weight: bold;
    
