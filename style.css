@@ -43,7 +43,7 @@ body {
     outline: none;
     transition: border-color 0.2s;
     background-color: #2c2c2c; 
-    color: #8c9299; 
+    color: #e1e6eb; 
 }
 
 .search input::placeholder {
