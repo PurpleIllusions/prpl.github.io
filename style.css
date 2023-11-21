@@ -43,11 +43,11 @@ body {
     outline: none;
     transition: border-color 0.2s;
     background-color: #2c2c2c; 
-    color: #e1e6eb; 
+    color: #c4c7ca; 
 }
 
 .search input::placeholder {
-    color: #848484; 
+    color: #c4c7ca; 
 }
 
 .search input:focus {
