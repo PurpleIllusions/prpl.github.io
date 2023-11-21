@@ -5,8 +5,8 @@ html, body {
 }
 
 body {
-     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(81,26,93,1) 57%, rgba(212,8,56,1) 100%); 
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(24,5,27,1) 37%, rgba(43,9,47,1) 55%, rgba(70,26,102,1) 100%);
     font-family: Verdana, sans-serif;
     font-weight: bold;
 }
@@ -14,7 +14,7 @@ body {
       border: 1px solid transparent;
       padding: 40px;
       border-radius: 20px;
-      background-color: #2F4F4F;
+      background-color: #53687c;
       
              }
 
