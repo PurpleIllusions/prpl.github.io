@@ -28,7 +28,8 @@ body {
 }
 
 
-.search input[type="text"] {
+
+.search input {
     padding: 10px;
     border: 1px solid #363636; 
     border-radius: 20px; 
@@ -40,12 +41,12 @@ body {
     color: #fff; 
 }
 
-.search input[type="text"]::placeholder {
+.search input::placeholder {
     color: #848484; 
 }
 
-.search input[type="text"]:focus {
-    border-color: #d0d0d0;
+.search input:focus {
+    border-color: #c7cacd;
 }
 
 
