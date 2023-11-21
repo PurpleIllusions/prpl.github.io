@@ -34,7 +34,7 @@ body {
     margin-top: 10px;
 }
 
-.search-input {
+#search-input {
     padding: 10px;
     border: 1px solid #363636; /* Darker color for the border */
     border-radius: 20px; /* Increased border-radius for a more circular shape */
@@ -46,15 +46,15 @@ body {
     color: #fff; /* Text color */
 }
 
-.search-input::placeholder {
+#search-input::placeholder {
     color: #848484; /* Placeholder text color */
 }
 
-.search-input:focus {
+#search-input:focus {
     border-color: #007bff;
 }
 
-.search-button {
+#search-button {
     padding: 10px;
     background-color: #007bff;
     border: 1px solid #007bff;
@@ -64,10 +64,9 @@ body {
     transition: background-color 0.2s, color 0.2s;
 }
 
-.search-button:hover {
+#search-button:hover {
     background-color: #0056b3;
 }
-
 
     .funkcje    
     {
