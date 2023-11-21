@@ -8,6 +8,7 @@ body {
      background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(81,26,93,1) 57%, rgba(212,8,56,1) 100%); 
     font-family: Verdana, sans-serif;
+    font-weight: bold;
 }
     .obwod {
       border: 1px solid transparent;
