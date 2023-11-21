@@ -19,29 +19,30 @@ let losowy_stan = false;
 let update_timer;
 
 const lista_utworow = [
+    
     {
-        img: 'rip.jpg',
-        name: 'Rip',
-        artist: 'Playboi Carti',
-        song: 'rip.mp3'
-    },
-    {
-        img: 'rip.jpg',
+        img: 'jpgs/die lit.jpg',
         name: 'Molly',
         artist: 'Playboi Carti',
-        song: 'mollyy.mp3'
+        song: 'muzyka/molly.mp3'
     },
     {
-        img: '2pac.jpg',
+        img: 'jpgs/2pac.jpg',
         name: 'Hit Em Up',
         artist: '2Pac',
-        song: 'Hit Em Up.mp3'
+        song: 'muzyka/Hit Em Up.mp3'
     },
     {
-        img: 'agc.jpg',
+        img: 'jpgs/agc.jpg',
         name: 'i need u',
         artist: 'Ken Carson',
-        song: 'need u.mp3'
+        song: 'muzyka/need u.mp3'
+    }.
+    {
+        img: 'jpgs/die lit.jpg',
+        name: 'Rip',
+        artist: 'Playboi Carti',
+        song: 'muzyka/rip.mp3'
     }
 ];
 
