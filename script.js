@@ -37,7 +37,7 @@ const lista_utworow = [
         name: 'i need u',
         artist: 'Ken Carson',
         song: 'muzyka/need u.mp3'
-    }.
+    },
     {
         img: 'jpgs/dielit.jpg',
         name: 'Rip',
