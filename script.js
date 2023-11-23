@@ -27,10 +27,10 @@ const lista_utworow = [
         song: 'muzyka/molly.mp3'
     },
     {
-        img: 'jpgs/2pac.jpg',
-        name: 'Hit Em Up',
-        artist: '2Pac',
-        song: 'muzyka/Hit Em Up.mp3'
+        img: 'jpgs/2000.jpg',
+        name: 'Show Me',
+        artist: 'Joey Bada$$',
+        song: 'muzyka/Show me.mp3'
     },
     {
         img: 'jpgs/agc.jpg',
@@ -43,6 +43,12 @@ const lista_utworow = [
         name: 'Rip',
         artist: 'Playboi Carti',
         song: 'muzyka/rip.mp3'
+    },
+    {
+        img: 'jpgs/2pac.jpg',
+        name: 'Hit Em Up',
+        artist: '2Pac',
+        song: 'muzyka/Hit Em Up.mp3'
     }
 ];
 
