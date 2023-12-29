@@ -28,9 +28,27 @@ const lista_utworow = [
     },
     {
         img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2Fagc.jpg?alt=media&token=6836afed-42ed-49bb-9b8b-9597f3a46485',
-        name: 'need u ',
-        artist: 'ken',
+        name: 'Need u',
+        artist: 'Ken Carson',
         song: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/muzyka%2Fneed_u.mp3?alt=media&token=43ae8704-2916-451c-99bc-0a1ad1cc5ad2'
+    },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2F2000.jpg?alt=media&token=b272927c-b787-480a-92a8-85a26c2c9071',
+        name: 'Show Me',
+        artist: 'Joey Bada$$',
+        song: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/muzyka%2FShow_me.mp3?alt=media&token=498832f0-151b-4348-bd47-851b25a3e72f'
+    },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2Fdielit.jpg?alt=media&token=377257ef-0908-4ac7-a831-37aa4182ab1a',
+        name: 'Rip',
+        artist: 'Playboi Carti',
+        song: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/muzyka%2Frip.mp3?alt=media&token=27dbf39e-4969-4b6a-9b91-57dcc9881845'
+    },
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2F2pac.jpg?alt=media&token=c826b538-04e2-4f45-9038-f75ead98283e',
+        name: 'Hit Em Up',
+        artist: '2Pac',
+        song: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/muzyka%2FHit_Em_Up.mp3?alt=media&token=e4868b84-7b47-4eb8-b00e-da0ed2c0d149'
     }
 ];
 
