@@ -20,35 +20,17 @@ let update_timer;
 
 const lista_utworow = [
     
-    {
-        img: 'jpgs/dielit.jpg',
+  {
+        img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2Fdielit.jpg?alt=media&token=377257ef-0908-4ac7-a831-37aa4182ab1a',
         name: 'Molly',
         artist: 'Playboi Carti',
-        song: 'muzyka/molly.mp3'
+        song: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/muzyka%2Fmolly.mp3?alt=media&token=7967afcc-ea9d-426a-8d8d-09b0c2f1dd9b'
     },
     {
-        img: 'jpgs/2000.jpg',
-        name: 'Show Me',
-        artist: 'Joey Bada$$',
-        song: 'muzyka/Show me.mp3'
-    },
-    {
-        img: 'jpgs/agc.jpg',
-        name: 'i need u',
-        artist: 'Ken Carson',
-        song: 'muzyka/need u.mp3'
-    },
-    {
-        img: 'jpgs/dielit.jpg',
-        name: 'Rip',
-        artist: 'Playboi Carti',
-        song: 'muzyka/rip.mp3'
-    },
-    {
-        img: 'jpgs/2pac.jpg',
-        name: 'Hit Em Up',
-        artist: '2Pac',
-        song: 'muzyka/Hit Em Up.mp3'
+        img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2Fagc.jpg?alt=media&token=6836afed-42ed-49bb-9b8b-9597f3a46485',
+        name: 'need u ',
+        artist: 'ken',
+        song: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/muzyka%2Fneed_u.mp3?alt=media&token=43ae8704-2916-451c-99bc-0a1ad1cc5ad2'
     }
 ];
 
