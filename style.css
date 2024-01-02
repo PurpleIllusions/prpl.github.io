@@ -9,6 +9,10 @@ body {
     background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(24,5,27,1) 37%, rgba(43,9,47,1) 55%, rgb(70, 26, 102) 100%);
     font-family: Verdana, sans-serif;
     font-weight: bold;
+    display: flex; /* Use flexbox to center the content vertically and horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    min-height: 100vh;
 }
     .obwod {
         border: 1px solid transparent;
@@ -26,7 +30,6 @@ body {
         height: 95vh;
         display: flex;
         align-items: center;
-      
 
              }
 
