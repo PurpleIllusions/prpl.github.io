@@ -2,7 +2,6 @@ let now_playing = document.querySelector('.now-playing');
 let okladkaUtw = document.querySelector('.okladka');
 let nazwaUtw = document.querySelector('.nazwa-utw');
 let nazwa_artysty = document.querySelector('.artysta');
-
 let play_button = document.querySelector('.play');
 let next = document.querySelector('.nastepny-utwor');
 let prev = document.querySelector('.poprzedni-utwor');
@@ -72,19 +71,24 @@ function load_music(indexUtw){
     
 }
 
-function wycisz() {
+let muteIcon = document.querySelector('.fa-volume-high');
+
+function toggleMute() {
     if (mute) {
-        
-        curr_track.volume = 1.0; 
+        // Unmute the audio
+        curr_track.volume = vol_slider.value / 100;
         mute = false;
-        vol_slider.value = 100; 
+        muteIcon.classList.remove('fa-volume-mute');
+        muteIcon.classList.add('fa-volume-high');
     } else {
-      
-        curr_track.volume = 0; 
+        // Mute the audio
+        curr_track.volume = 0;
         mute = true;
-        vol_slider.value = 0; 
+        muteIcon.classList.remove('fa-volume-high');
+        muteIcon.classList.add('fa-volume-mute');
     }
 }
+
 function reset(){
     curr_time.textContent = "00:00";
     total_duration.textContent = "00:00";
@@ -193,8 +197,15 @@ function seekTo(){
     let seekto = curr_track.duration * (seek_slider.value / 100);
     curr_track.currentTime = seekto;
 }
-function setVolume(){
-    curr_track.volume = vol_slider.value / 100;
+function setVolume() {
+    // Ensure the volume is set to 0 when the slider is at 0
+    if (vol_slider.value == 0) {
+        curr_track.volume = 0;
+        mute = true;
+    } else {
+        curr_track.volume = vol_slider.value / 100;
+        mute = false;
+    }
 }
 function setUpdate(){
     let seekPosition = 0;
