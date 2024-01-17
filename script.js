@@ -18,6 +18,13 @@ let losowy_stan = false;
 let update_timer;
 
 const lista_utworow = [
+
+    {
+        img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2Fi_wonder.jpg?alt=media&token=04d8beb3-dcc1-446d-8300-1f7546a068bb',
+        name: 'I wonder',
+        artist: 'Kanye West',
+        song: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/muzyka%2FI_Wonder.mp3?alt=media&token=828848cd-8401-4fa7-921f-6cff6ffe15c9'
+    },
     
   {
         img: 'https://firebasestorage.googleapis.com/v0/b/odtwarzacz-b693f.appspot.com/o/jpgs%2Fdielit.jpg?alt=media&token=377257ef-0908-4ac7-a831-37aa4182ab1a',
