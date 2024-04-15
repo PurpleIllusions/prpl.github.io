@@ -3,14 +3,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Odtwarzacz</title>
-    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="log.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f39428d239.js" crossorigin="anonymous"></script>
+    
 </head>
 
     <body>
+        <div class="auth-form" id="login-form">
+            <h2>Logowanie</h2>
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Hasło">
+            <button type="button" onclick="login()">Zaloguj się</button>
+
+            <p>Nie masz jeszcze konta? <a href="#" onclick="toggleForm()">Zarejestruj się</a></p>
+        </div>
+        
+        <div class="auth-form" id="register-form" style="display: none;">
+            <h2>Rejestracja</h2>
+            <input type="text" id="new-email" placeholder="Email">
+            <input type="password" id="new-password" placeholder="Hasło">
+            <button type="button" onclick="register()">Zarejestruj się</button>
+            <p>Masz już konto? <a href="#" onclick="toggleForm()">Zaloguj się</a></p>
+        </div>
+                
+
+
         <div class="odtwarzacz">
+           
             <div class="obwod">
 
                 <div class="funkcje">
@@ -21,17 +44,17 @@
                             <div class="artysta">Nazwa artysty</div>
                 </div>
 
-                
+            
                 
                 <div class="slider">
                    <div class="current-time">00:00</div>
-                   <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                   <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="przewin()">
                    <div class="total-duration">00:00</div>
                 </div>
 
                 <div class="slider">
-                    <i class="fa-solid fa-volume-high" onclick="toggleMute()"></i>
-                    <input type="range" min="0" max="100" value="99" class="vol_slider" onchange="setVolume()">
+                    <i class="fa-solid fa-volume-high" onclick="toggle_mute()"></i>
+                    <input type="range" min="0" max="100" value="99" class="vol_slider" onchange="set_vol()">
                 </div>
 
 
@@ -39,25 +62,66 @@
                <div class="losowy" onclick="losowy_utwor()">
                <i class="fa-solid fa-shuffle shuffle-button"></i>
                </div>
-               <div class="poprzedni-utwor" onclick="prevTrack()">
+               <div class="poprzedni-utwor" onclick="prev_song()">
                     <i class="fa-solid fa-backward-step"></i>
                 </div>
-                <div class="play" onclick="playpauseTrack()">
+                <div class="play" onclick="playpause_song()">
                     <i class="fa-solid fa-play"></i>
                 </div>
-                <div class="nastepny-utwor" onclick="nextTrack()">
+                <div class="nastepny-utwor" onclick="next_song()">
                     <i class="fa-solid fa-forward-step"></i>
                 </div>
-                <div class="powtorz" onclick="repeatTrack()">
+                <div class="powtorz" onclick="repeat_song()">
                     <i class="fa-solid fa-repeat"></i>
                 </div>
 
                 
            </div>
-
+        </div>
+    
+ 
+    
        
-           </div>
-       </div>
+    </div>
+    <div class="library">
+        <h2>Biblioteka</h2>
+        <button onclick="createPlaylist()" class="create-playlist-btn">
+            <i class="fas fa-plus"></i> Utwórz playlistę
+        </button>
+        <ul id="lista_utw"></ul>
+    
+        <!-- Formularz do tworzenia nowej playlisty -->
         
+
+
+
+
+        
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+
+
+    <script>
+    const firebaseConfig = {
+        apiKey: "AIzaSyDE-gOsahRRfHXLTNXByUmkOhVWrdfOi3w",
+        authDomain: "odtwarzacz-b693f.firebaseapp.com",
+        databaseURL: "https://odtwarzacz-b693f-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "odtwarzacz-b693f",
+        storageBucket: "odtwarzacz-b693f.appspot.com",
+        messagingSenderId: "534636318830",
+        appId: "1:534636318830:web:f50d095f41d0869b73167f",
+        measurementId: "G-JKZ3FKGTKP"
+    };
+
+  
+    firebase.initializeApp(firebaseConfig);
+    const storage = firebase.storage();
+    const firestore = firebase.firestore();
+    const auth = firebase.auth();
+</script>
+
+
     </body>
 </html>
