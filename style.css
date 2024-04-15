@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -9,28 +10,32 @@ body {
     background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(24,5,27,1) 37%, rgba(43,9,47,1) 55%, rgb(70, 26, 102) 100%);
     font-family: Verdana, sans-serif;
     font-weight: bold;
-    display: flex; /* Use flexbox to center the content vertically and horizontally */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     min-height: 100vh;
 }
+
     .obwod {
         border: 1px solid transparent;
         padding: 40px;
         border-radius: 20px;
-        background-color: #778085;
+        background-color: rgba(206, 240, 255, 0.504);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         opacity: 0.9;
+        color: rgb(0, 0, 0);
+        max-height: 85%;
+        
         
              }
 
-    .odtwarzacz  {
-        flex-direction: column;
-        justify-content: center;
-        height: 95vh;
-        display: flex;
-        align-items: center;
-
+             .odtwarzacz {
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                position:relative; 
+                right:85px;
              }
 
 .current-time,
@@ -41,52 +46,112 @@ body {
 }
 
 
+.add-to-queue-label {
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+.library {
+    position:relative; 
+    font-size: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    flex-direction:center;
+    border: 1px solid transparent;
+    padding: 2vw; /* Adjust this value as needed */
+    border-radius: 1vw; /* Adjust this value as needed */
+    background-color: rgba(206, 240, 255, 0.504);
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1); /* Adjust this value as needed */
+    opacity: 0.9;
+    overflow: hidden;
+    position:relative; 
+    left:0px;
+}
+
+
+
+#lista_utw {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista_utw li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#lista_utw li:hover {
+    background-color: #aea6a6;
+}
+
+#lista_utw li span {
+    font-weight: bold;
+}
+
+
+.add_to_que_icon {
+    padding-left: 25px;
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #000000; /* Change the color as needed */
+}
+
+.add_to_que_icon:hover {
+    color: #f0f0f0; /* Change the hover color as needed */
+}
 
 .search input {
     padding: 10px;
-    border: 1.8px solid #242424; 
+    border: 1.8px solid #24212e; 
     border-radius: 20px; 
     font-size: 16px;
     width: 250px;
     outline: none;
     transition: border-color 0.2s;
-    background-color: #454545af; 
-    color: #c4c7ca; 
+    background-color: rgba(168, 197, 212, 0.862);
+    color: #000000; 
+    font-weight:bold;
 }
 
 .search input::placeholder {
-    color: #c4c7ca; 
+    color: #000000; 
+    font-weight:bold;
 }
 
 .search input:focus {
-    border-color: #84888d;
+    border-color: #7d8389;
 }
 
 
 
-    .funkcje    
-    {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
+.funkcje    
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
     
-    .okladka {
-        margin: 25px;
-        width: 420px;
-        height: 250px; 
-        
-        background-size: cover;
-        background-position: center;
-        -moz-box-shadow: 0px 6px 5px black;
-        -webkit-box-shadow: 0px 6px 5px black;
-        box-shadow: 0px 6px 5px black;
-        border-radius: 5px;
-        transform: scale(1.05);
-        
-            }
+.okladka {
+    margin: 25px;
+    width: 440px;
+    height: 270px; 
+    background-size: cover;
+    background-position: center;
+    -moz-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 4px solid #000000; 
+    }
 
+    
     
     .now-playing {
         font-size: 1.25rem;
@@ -146,7 +211,7 @@ body {
         -moz-appearance: none;
         appearance: none;
         height: 5px;
-        background: #31373b;
+        background: #30303ad1;
         -webkit-transition: .2s;
         transition: opacity .2s;
         border-radius: 10px;
@@ -232,3 +297,238 @@ body {
     border-radius: 50%;
     border: none; 
 }
+
+.okladka {
+    background-size: cover;
+  }
+
+@media only screen and (max-width: 600px) {
+    .okladka {
+      background-size: contain;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+    }
+  }
+  
+  
+
+
+
+.auth-form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(206, 240, 255, 0.504);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    text-align: center; 
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.auth-form a {
+    color: #4c397c4d;
+    text-decoration: none;
+}
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+
+
+button[type="submit"] {
+    background-color: #4c397c4d;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(50, 55, 159, 0.667);
+}
+
+.auth-form {
+    position:relative; 
+    bottom:200px;
+    right:0px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(206, 240, 255, 0.504);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.auth-form a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1.8px solid #24212e; 
+    border-radius: 20px; 
+    font-size: 16px;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: rgba(168, 197, 212, 0.862);
+    color: #000000; 
+    font-weight:bold;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #000000; 
+    font-weight:bold;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #7d8389;
+}
+
+input[type="text"],
+input[type="password"]{
+margin-bottom: 10px;
+}
+
+.auth-form button {
+    background-color: rgba(47, 68, 78, 0.504);
+    color: rgb(253, 241, 241); 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+    font-weight: bold; 
+    font-size: 16px; 
+}
+
+.auth-form button:hover {
+    background-color:rgba(66, 102, 118, 0.504);
+}
+
+
+
+
+
+
+
+
+
+
+.create-playlist-btn {
+    background-color: rgba(47, 68, 78, 0.504);
+    color: rgb(253, 241, 241);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.create-playlist-btn i {
+    margin-right: 5px; 
+}
+
+
+
+
+
+
+
+
+
+.playlist-form {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(206, 240, 255, 0.504);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+ 
+    flex-direction: column;
+    flex-direction:center; 
+    flex-wrap: wrap; /* Nowa linia dla przycisku */
+}
+
+.playlist-form h2 {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Dodajemy odstęp między nagłówkiem a przyciskiem */
+}
+
+.add-playlist-btn {
+    background-color: rgba(47, 68, 78, 0.504);
+    color: rgb(253, 241, 241);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.add-playlist-btn i {
+    font-size: 16px;
+}
+
+.playlist-form input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+    margin-bottom: 10px; 
+}
+
+.playlist-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.playlist-header {
+    display: flex;
+    align-items: center;
+}
+
+.button-row {
+    margin-top: 10px;
+    display: flex;
+    position:relative; 
+    font-size: 1.15rem;
+    display: flex;
+    flex-direction: column;
+    flex-direction:center;
+}
+
